@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4ecec;
+  }
+
+.chat-container {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    background-image: url('../assets/uiux.png');
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .chat-header {
+    background-color: #075e54;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .chat-header img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .chat-header .header-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chat-header .header-info h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .chat-header .header-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #d3d3d3;
+  }
+
+  .chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: transparent;
+  }
+
+  .chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    flex-shrink: 0;
+  }
+
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+  }
+
+  .chat-input button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #075e54;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .chat-message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 70%;
+    word-wrap: break-word;
+    clear: both;
+    border: 1px solid transparent;
+  }
+
+  .message-bot {
+    background-color: #ffffff;
+    align-self: flex-start;
+    float: left;
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .message-user {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    float: right;
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
